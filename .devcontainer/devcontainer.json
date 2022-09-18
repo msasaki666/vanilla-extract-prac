@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-extract-prac",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "settings": {
+    "editor.formatOnSave": true,
+    "dotfiles.repository": "msasaki666/dotfiles",
+    "dotfiles.targetPath": "~/dotfiles",
+    "dotfiles.installCommand": "~/dotfiles/install.sh"
+  },
+  "extensions": [
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "zhengxiaoyao0716.intelligence-change-case",
+    "mosapride.zenkaku",
+    "dbaeumer.vscode-eslint",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "redhat.vscode-yaml",
+    "christian-kohler.path-intellisense",
+    "Orta.vscode-jest",
+    "redhat.fabric8-analytics",
+    "esbenp.prettier-vscode",
+  ],
+  "postCreateCommand": "apt-get update && apt-get install -y peco",
+}
